@@ -12,4 +12,17 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
+/*app.get("/log_out", function (req, res) {
+  req.session.destroy();
+  res.redirect("/index");
+});*/
+
+app.get("/error", function (req, res) {
+  res.render("error");
+});
+
+app.use(function (req, res) {
+  res.status(404).render("error");
+});
+
 app.listen(8080);
