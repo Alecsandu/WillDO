@@ -1,19 +1,22 @@
 nav {
-  width: 100vw;
   background-color: silver;
 }
 
 ul {
   list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
-
-  display: flex;
 }
 
 li {
+  display: inline-block;
   margin: 2vw;
   font-size: 3vh;
+}
+
+li p {
+  font-size: 4vh;
 }
 
 a {
@@ -24,7 +27,14 @@ a {
 }
 
 a:hover {
-  background-color: orangered;
+  background-image: linear-gradient(
+    rgba(226, 56, 13, 0.295),
+    rgba(253, 95, 38, 0.836)
+  );
+  /*background-: rgb(253, 95, 38);*/
+  border-radius: 1em;
+  -moz-border-radius: 60%;
+  -webkit-border-radius: 60%;
 }
 
 button {
@@ -49,16 +59,13 @@ button {
   }
 
   button {
-    /*makes the button visible*/
     display: block;
 
-    /*since we are here, we can style it a little bit!*/
     padding: 2vw;
     font-size: 3vh;
-    background-color: #afe0ff;
+    background-color: silver;
     border: none;
 
-    /*outline none removes the default blue border that appears anytime you click on the button*/
     outline: none;
 
     cursor: pointer;
