@@ -2,6 +2,10 @@ nav {
   background-color: rgb(219, 219, 219);
 }
 
+.Logo {
+  font-size: 1.5em;
+}
+
 ul {
   list-style-type: none;
   text-align: center;
@@ -11,8 +15,9 @@ ul {
 
 li {
   display: inline-block;
-  margin: 2vw;
+  /*margin: 2vw;*/
   font-size: 3vh;
+  padding: 20px;
 }
 
 li p {
@@ -51,7 +56,6 @@ button {
     outline: none;
 
     cursor: pointer;
-
     align-self: flex-start;
   }
 }
@@ -73,7 +77,7 @@ li > a::before {
   height: 2px;
   bottom: -3px;
   left: 0;
-  background-color: rgba(240, 240, 11, 0.952);
+  background-color: rgba(14, 6, 34, 0.952);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
